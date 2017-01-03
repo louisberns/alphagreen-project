@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alphagreen</title>
+
+		<!--Web Development - Luís Guilherme Berns Silva-->
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css\index.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!--For mobile nav toggle-->
+		<script type="text/javascript">
+			var mediaQuery = window.matchMedia(("min-width: 1020px"));
+
+			$(document).ready(function(){
+				if (!mediaQuery.matches){
+					$("button").click(function(){
+						$("nav ul").toggle();
+					});
+				} else if ($("button").css("display") == "none") {
+					$("nav ul").show();
+				} else {
+					$("nav ul").show();
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="header-logo" id="logo-wide"><a href="#"><img src="img\logo.png"></a></div>
+			</div>
+			<button class="menu-nav"><i class="material-icons">menu</i></button>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="">Sobre nós</a></li>
+					<li><a href="">Investimento</a></li>
+					<li><a href="">Portfólio</a></li>
+					<li><a href="">Alphaville</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav>
+			<div id="anchor"></div>
+		</header>
+		<content>
+			<!--Imagem principal de apresentação, foto Alphaville-->
+			<section class="content-index">
+				<div class="banner-index">
+					<img src="img\house-banner.jpg">
+				</div>
+			</section>
+			<!--Seção de informações dos principais tópicos da emoresa-->
+			<section class="content-index">
+				<div class="all-cards-index">
+					<div id="index-alphaville" class="card-index card-green">
+						<span class="icon-card-index"><img src="img\icons\golf-icon.png"></span>
+						<h2>Alphaville Maringá</h2>
+						<p>Conforto e lazer em um único lugar, condomínio residencialde alto padrão de qualidade de vida.</p>
+						<span class="button-saiba"><a href="">SAIBA MAIS</a></span>
+					</div>
+				</div>
+				<div class="all-cards-index">	
+					<div id="index-about" class="card-index card-blue">
+						<span class="icon-card-index"><img src="img\icons\about-icon.png"></span>
+						<h2>Quem somos</h2>
+						<p>Empresa de investimentos imobiliários que atua exclusivamento no limites do condomínio Alphaville Maringá.</p>
+						<span class="button-saiba"><a href="">SAIBA MAIS</a></span>
+					</div>
+				</div>
+			</section>
+		</content>
+		<footer>
+			<div>
+				<div></div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			//Definir seletor para aplicar width aos cards, função c/ window
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,321 @@
+* {
+	
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	display: block;
+}
+
+h1, h2, h3, p, a, li {
+	font-family: sans-serif;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+/*Header site*/
+header {
+	background: #fff;
+}
+
+div.header{
+	display: block;
+	position: fixed;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 72px;
+	height: 82px;
+	z-index: 2;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+	background: #fff;
+	white-space: nowrap;
+}
+
+.header a {
+	display: block;
+	padding-top: 14px;
+	height: 82px;
+}
+
+.header-logo a img {
+	position: relative;
+	left: 16px;
+	width: 210px;
+	height: 53.55px;
+	max-width: 210px;
+	margin: 0 auto;
+}
+
+
+/*Nav bar, top to bottom*/
+button.menu-nav {
+	position: fixed;
+	overflow: hidden;
+	border: none;
+	text-decoration: none;
+	background: transparent center center no-repeat;
+	top: 18px;
+	text-align: right;
+	white-space: nowrap;
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+	right: 10px;
+}
+
+nav {
+	border: 0;
+	overflow: hidden;
+	z-index: 4;
+}
+
+nav ul {
+	display: none;
+	position: fixed;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+	background: #fff;
+	overflow: hidden;
+	z-index: 4;
+	width: 100%;
+	top: 82px;
+	right: 0;
+	left: 0;
+}
+
+.nav-links li {
+	display: inline-block;
+	background: #1c7cb9;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	z-index: inherit;
+	top: 0;
+	white-space: nowrap;
+}
+
+.nav-links li a{
+	display: inline-block;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	padding: 15px 0 15px 0;
+}
+
+.nav-links li:hover {
+	opacity: .9;
+}
+
+div#logo-tgg {
+	display: inline;
+}
+
+div#logo-wide img {
+	width: 70%;
+	float: left;
+}
+
+@media screen and (min-width: 630px) {
+	nav {
+		display: block;
+	}
+	nav ul {
+		width: 100%;
+	}
+	.nav-links li {
+		display: inline-block;
+		width: 20%;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1020px) {
+	nav {
+		display: block;
+	}
+	nav ul {
+		display: block;
+		position: fixed;
+		background: transparent;
+		top: 16px;
+		z-index: 4;
+		box-shadow: none;
+		white-space: nowrap;
+		transform: rotate(180deg);
+		width: 80%;
+		clear: right;
+		right: -190px;
+
+	}
+	.nav-links li {
+		position: relative;
+		background: transparent;
+		width: 100%;
+		max-width: 150px;
+		text-align: right;
+		float: left;
+		transform: rotate(-180deg);
+	}
+	.nav-links li a {
+		color: #1c7cb9;
+	}
+	.nav-links li:hover {
+		background: #000000;
+	}
+	button.menu-nav {
+		display: none;
+	}
+}
+
+div#anchor {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 82px;
+}
+
+
+/*Conteúdo estilo geral*/
+
+.content-index {
+	display: block;
+	background: #FAFAFA;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/*Conteúdo apresentação, imagem*/
+
+div.banner-index {
+	display: block;
+	background: #f0f0f0;
+	position: relative;
+	padding: 15px 0 15px 0;
+}
+
+.banner-index img {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 350px;
+	height: 100%;
+}
+
+/*Conteúdo apresentação, card/links principais*/
+
+.all-cards-index {
+	display: block;
+	text-align: justify;
+	padding: 10px 5px 10px 5px;
+	min-width: 340px;
+}
+
+.all-cards-index p {
+	font-size: 14px;
+	padding-top: 7px;
+
+}
+
+.card-index {
+	position: relative;
+	color: #FFFFFF;
+	width: 80%;
+	max-width: 500px;
+	min-width: 306px;
+	min-height: 190px;
+	display: block;
+	margin: 0 auto;
+	padding: 5px 17px 5px 17px;
+	border: 0;
+	border-radius: 2px;
+}
+
+.card-index h2 {
+	margin-bottom: 24px;
+}
+
+span.button-saiba {
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	height: 20px;
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	clear: both;
+	padding: 0;
+	z-index: 4;
+	bottom: 37px;
+}
+
+.button-saiba a {
+	display: block;
+	position: relative;
+	text-decoration: inherit;
+	font-weight: normal;
+	color: #FFF;
+	vertical-align: middle;
+	padding: 15px 15px 15px 0;
+}
+
+.card-green {
+	background: #40b751;
+}
+
+.card-blue {
+	background: #1c7cb9;
+}
+
+.icon-card-index {
+	display: block;
+	position: relative;
+	top: 7px;
+	right: 0;
+	float: right;
+}
+
+.icon-card-index img {
+	width: 52px;
+	height: 52px;
+}
+
+@media screen and (max-width: 350px) {
+	.all-cards-index .card-index{
+		max-width: 306px;
+		min-width: 150px;
+		width: 65%;
+		min-height: 160px;
+	}
+	.all-cards-index p {
+		display: none;
+	}
+	.icon-card-index {
+		float: initial;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+
+}
